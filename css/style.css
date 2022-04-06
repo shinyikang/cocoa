@@ -1,0 +1,481 @@
+
+* {
+  padding: 0.5%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Andale Mono", AndaleMono;
+}
+
+body {
+  background-color: #EED8C4;
+}
+
+p {
+  font-size: 1.3vw;
+  font-family: "Andale Mono", AndaleMono;
+}
+
+h2 {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.4vw;
+  font-family: "Andale Mono", AndaleMono;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.6fr;
+  grid-template-rows: 0.3fr 1fr 1fr 0.1fr;
+  gap: 7px 7px;
+  height: 95vh;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center; 
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "logo . menu"
+    "fact card marketplace"
+    "fact card info"
+    "footer footer footer";
+  width: 100%;
+  /*height: 100%;*/
+}
+
+#splash {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #57443B;
+    z-index: 10000000;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#splash img {
+  transform: translate(0%, 300%);
+}
+
+#splash p {
+  transform: translate(0%, 650%);
+  font-size: 1.3vw;
+  color: white;
+}
+
+#splash button {
+  transform: translate(0%, 650%);
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: 3vw;
+  margin: 1.5vw;
+  font-color: #463427;
+}
+
+#rules button {
+  cursor: pointer;
+  font-size: 1vw;
+  margin: 1.5vw;
+  font-color: #463427;
+  font-size: 1.1vw;
+}
+
+#explain1 {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #57443B;
+    z-index: 10000000;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 18%;
+    color: white;
+}
+
+#explain2 {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: #57443B;
+  z-index: 10000000;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  padding: 15%;
+  color: white;
+}
+
+#rules {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: #57443B;
+    z-index: 10000000;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 13%;
+    color: white;
+}
+
+
+#rules #explainbtn1 #explainbtn2 #rules_to_intro button {
+  transform: translate(0%,100%);
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: 6vw;
+  margin: 1.5vw;
+  font-color: #463427;
+  border-width: 0;
+}
+
+.menu {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: menu;
+  line-height: 150%;
+  text-align: right;
+  padding-top: 3%;
+  padding-right: 5%;
+  font-size: 1.2vw;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.menu button {
+  border-color: gray;
+  padding: 0.4vw 1vw;
+  background-color: transparent;
+  border-width: thin;
+}
+
+.menu button:hover {
+  background-color: #FFF9EB;
+  cursor: pointer;
+}
+
+.logo {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: logo;
+}
+
+
+.factBox {
+  background-image: url(../img/chocolate.png);
+  background-size: cover;
+  height: 32vw;
+  width:  26vw;
+  justify-self: center;
+  align-self: center;
+  grid-area: fact;
+  padding: 5%;
+}
+
+#fact {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  line-height: 140%;
+  font-size: 1.3vw;
+  color: white;
+}
+
+#fact a {
+  color: #FFF7DB;
+}
+
+.factBox h2 {
+  color: white;
+  padding-top: 3.3vw;
+  font-weight: bold;
+}
+
+.cardBox {
+  padding: 5%;
+  background-color: white;
+  height: 40vw;
+  width:  36vw;
+  justify-self: center;
+  align-self: center;
+  grid-area: card;
+  text-align: center;
+  border-radius: 5%;
+}
+
+#cards {
+  margin-top: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
+  line-height: 160%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1.5vw;
+}
+
+.cardBox:hover {
+  position:relative;
+  top:-5px;
+  cursor: pointer;
+  box-shadow: 0 6px #C6C6C6;
+}
+
+.cardBox:active {
+  box-shadow: 0 5px #999;
+  transform: translateY(4px);
+}
+
+
+.marketplace {
+  background-image: url(../img/marketplace_closed.png);
+  background-size: cover;
+  height: 9vw;
+  width:  16vw;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  grid-area: marketplace;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.marketplace a {
+  color: #EBEBEB;
+  font-weight: bold;
+  font-size: 1.5vw;
+  line-height: 650%;
+}
+
+.info {
+  justify-self: center;
+  align-self: center;
+  grid-area: info;
+  justify-content: center;
+  align-content: center; 
+  justify-items: center;
+  align-items: center;
+  font-size: 1.2vw;
+  text-align: center;
+  width: 18vw;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.info button {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.info button:hover {
+  background-color: #FFF9EB;
+  cursor: pointer;
+}
+
+
+.footer {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: footer;
+  text-align: right;
+  font-size: 1vw;
+  color: gray;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.market_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 10vw; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Modal Content */
+.market_modal-content {
+    background-color: #EDFFED;
+    margin: auto;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 5%;
+}
+
+/* The Close Button */
+.market_close {
+    color: gray;
+    float: right;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.market_close:hover,
+.market_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Cheatsheet Modal (background) */
+.cheatsheet_modal {
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  position: fixed; /* Stay in place */
+  padding-top: 12vw; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.cheatsheet_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 70%;
+  text-align: center;
+  border-radius: 2vw;
+}
+
+/* The Close Button */
+.cheatsheet_close {
+  color: gray;
+  float: right;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.cheatsheet_close:hover,
+.cheatsheet_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Exit Modal (background) */
+.exit_modal {
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  position: fixed; /* Stay in place */
+  padding-top: 15vw; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.exit_modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 20%;
+  height: 35%;
+  text-align: center;
+  border-radius: 1.5vw;
+}
+
+.exit_modal-content button {
+  margin: 0.5vw;
+  width: 4vw;
+}
+
+/* The Close Button */
+.exit_close {
+  color: gray;
+  float: right;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.exit_close:hover,
+.exit_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lostplayer {
+  cursor: pointer;
+  color: gray;
+}
+
+#lostplayer:hover{
+  text-decoration: none;
+  color: darkgray;
+  cursor: pointer;
+}
+
+#exitBtn {
+  cursor: pointer;
+}

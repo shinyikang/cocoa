@@ -1,0 +1,91 @@
+* {
+  padding: 0.5%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Andale Mono", AndaleMono;
+}
+
+body {
+  background-color: #EED8C4;
+}
+
+p {
+  font-size: 1.3vw;
+  font-family: "Andale Mono", AndaleMono;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.6vw;
+  font-family: "Andale Mono", AndaleMono;
+  line-height: 5vw;
+  text-decoration-line: underline;
+  justify-content: space-evenly;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.container {  display: grid;
+  width: 100%;
+  grid-template-columns: 0.8fr 1fr 0.6fr;
+  grid-template-rows: 0.1fr 1fr;
+  gap: 7px 0px;
+  grid-auto-flow: row;
+  height: 95vh;
+  grid-template-areas:
+    "logo . menu"
+    "content content content";
+}
+
+.content { 
+  grid-area: content; 
+  padding-right: 12vw;
+  padding-left: 12vw;
+}
+
+.logo { 
+  grid-area: logo; 
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.menu {
+  justify-self: stretch;
+  align-self: stretch;
+  grid-area: menu;
+  line-height: 150%;
+  text-align: right;
+  padding-top: 3%;
+  padding-right: 5%;
+  font-size: 1.2vw;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.menu button {
+  border-color: gray;
+  padding: 0.4vw 1vw;
+  background-color: transparent;
+  border-width: thin;
+  font-size: 1.2vw
+}
+
+#other:hover {
+  background-color: #FFF9EB;
+  cursor: pointer;
+}
+
+#me {
+  opacity: 0.3;
+}

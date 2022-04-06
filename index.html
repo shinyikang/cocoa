@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href='https://fonts.googleapis.com/css?family=Hubballi' rel='stylesheet'>
+
+<html>
+
+    <head>
+        <title>Cocoa</title>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/flavicon.png">
+    </head>
+
+    <body>
+
+    <div id="rules">
+        <p>In “Cocoa”, you get to experience first-hand the different hardships cocoa farmers face. As a cocoa farmer, you start with 9 plots of land, 3 wellness hearts, and 10 dollars.
+        Your duty is to sustainably cultivate your plantation, sell cocoa beans, and survive. <br><br>
+        Along the way, you’ll also get to “unwrap” interesting facts about chocolate. <br> <br> Ready to play?<br><br></p>
+        <button onclick="window.open('cocoa_rulebook.pdf','_blank')" class="w3-button w3-white">Rule Book</button>
+        <button id="rules_to_intro" class="w3-button w3-white">Enter Game</button>
+    </div>
+
+    <div id="explain2">
+        <p> The chocolate production system has a long-standing history of exploiting cocoa farmers and harming the environment. <br><br>Having to live off of less than $1 a day, cocoa farmers in West Africa burn forests, enslave their own children, and engage in hazardous work to sustain their livelihoods and their families.<br><br> </p>
+        <button id="explainbtn2" class="w3-button w3-white">Next</button>
+    </div>
+
+
+    <div id="explain1">
+        <p>Sweet, bitter, sometimes spicy, sometimes fruity… chocolate is a sweet delight that brings us joy.</p>
+        <p>However, did you know that there is a dark, broken side to chocolate?<br><br></p>
+        <button id="explainbtn1" class="w3-button w3-white">Next</button>
+    </div>
+
+
+    <div id="splash">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+              <img style="width:25%;" src="img/splash_logo.png"></a></div>
+              <p>Please select the number of players:</p>
+              <button id="go-ahead-button1" class="w3-button w3-white">2</button>
+               <button id="go-ahead-button2" class="w3-button w3-white">3</button>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="container">
+        <div class="logo"><img id="exitBtn" style="width:5vw;" src="img/logo.png"></div>
+        <div class="menu">
+            <button onclick="window.open('about.html','_blank')"style="font-size: 1.2vw;">About</button>
+            <button onclick="window.open('resources.html','_blank')"style="font-size: 1.2vw;">Resources</button>
+        </div>
+        <div class="factBox">
+            <h2>Secret, Unwrapped <br><br></h2>
+            <p id="fact"></p>
+        </div>
+        <div class="cardBox" onclick="generateCard()" data-modal-target="#modal">
+            <p id="cards"></p>
+        </div>
+        <div class="marketplace">
+            <a>D-<a id="clicks"></a></a>
+        </div>
+        <div class="info">
+            <button onclick="window.open('cocoa_rulebook.pdf','_blank')"style="font-size: 1.2vw;">Rule Book</button><br>——————<br>
+            <button style="font-size: 1.2vw;" id="myBtn">Cheatsheet</button><br>——————<br>
+            <button style="font-size: 1.2vw;" id="exitBtn2">Game Over</button><br>
+            <a style="font-size: 0.9vw;" id="lostplayer">(Lost One Player?)</a>
+        </div>
+        <div class="footer">® all rights reserved</div>
+    </div>
+
+    <div id="cheatsheetModal" class="cheatsheet_modal">
+      <div class="cheatsheet_modal-content">
+        <span class="cheatsheet_close">&times;</span>
+        <img style="width:95%;" src="img/cheat_sheet.png">
+      </div>
+    </div>
+
+    <div id="marketModal" class="market_modal">
+      <div class="market_modal-content">
+        <span class="market_close">&times;</span><br><br>
+        <img style="width:70%;" src="img/marketplace.png">
+        <h2><br>Marketplace Open!</h2>
+        <button id="secBtn" class="w3-button w3-black">Cheatsheet</button><br><br><br>
+      </div>
+    </div>
+
+    <div id="exitModal" class="exit_modal">
+      <div class="exit_modal-content">
+        <span class="exit_close">&times;</span><br>
+        <p>Exit Game?</p><br>
+        <button onclick="location.href='http://google.com';" class="w3-button w3-white w3-border">Yes</button><button class="exit_no w3-button w3-white w3-border">No</button>
+      </div>
+    </div>
+
+
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</html>
