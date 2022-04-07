@@ -197,7 +197,6 @@ button:hover {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  color: black;
 }
 
 .menu button {
@@ -205,6 +204,7 @@ button:hover {
   padding: 0.4vw 1vw;
   background-color: transparent;
   border-width: thin;
+  color: black;
 }
 
 .menu button:hover {
@@ -253,13 +253,14 @@ button:hover {
 .cardBox {
   padding: 5%;
   background-color: white;
-  height: 40vw;
+  height:40vw;
   width:  36vw;
   justify-self: center;
   align-self: center;
   grid-area: card;
   text-align: center;
   border-radius: 5%;
+  transiton: all 2s;
 }
 
 #cards {
@@ -278,15 +279,13 @@ button:hover {
 }
 
 .cardBox:hover {
-  position:relative;
-  top:-5px;
   cursor: pointer;
-  box-shadow: 0 6px #C6C6C6;
 }
 
 .cardBox:active {
-  box-shadow: 0 5px #999;
-  transform: translateY(4px);
+  position:relative;
+  top:-5px;
+  box-shadow: 0 6px #C6C6C6;
 }
 
 
