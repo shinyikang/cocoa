@@ -36,7 +36,9 @@ button:hover {
   cursor: pointer;
 }
 
-.container {  display: grid;
+.container {  
+  padding: 12px;
+  display: grid;
   grid-template-columns: 0.8fr 1fr 0.6fr;
   grid-template-rows: 0.3fr 1fr 1fr 0.1fr;
   gap: 7px 7px;
@@ -188,8 +190,6 @@ button:hover {
   grid-area: menu;
   line-height: 150%;
   text-align: right;
-  padding-top: 3%;
-  padding-right: 5%;
   font-size: 1.2vw;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -197,6 +197,7 @@ button:hover {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  color: black;
 }
 
 .menu button {
@@ -336,6 +337,7 @@ button:hover {
 .info button {
   border-color: transparent;
   background-color: transparent;
+  color: black;
 }
 
 .info button:hover {
@@ -351,6 +353,7 @@ button:hover {
   text-align: right;
   font-size: 1vw;
   color: gray;
+  padding-right: 5px;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
