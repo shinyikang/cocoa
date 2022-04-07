@@ -224,6 +224,7 @@ $("#explainbtn2").click(function() {
 
 $("#rules_to_intro").click(function() {
   $("#rules").fadeOut(500);
+  $(".intro-wrapper").fadeOut(500);
   // cheatsheetModal.style.display = "block";
 });
 
