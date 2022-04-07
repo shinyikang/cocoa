@@ -347,3 +347,10 @@ window.onclick = function(event) {
     exitModal.style.display = "none";
   }
 }
+
+
+// $(document).on('touchstart', function (event) {
+//     if (!$(event.target).closest('#MyDivId').length) {
+//         $('#MyDivId').hide()
+//     }
+// });
