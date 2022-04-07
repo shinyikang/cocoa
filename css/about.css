@@ -10,9 +10,9 @@ body {
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-family: "Andale Mono", AndaleMono;
-  iine-height: 1.6vw;
+  iine-height: 1.7vw;
   text-align: center;
   justify-content: space-evenly;
 }
