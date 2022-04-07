@@ -43,7 +43,8 @@ h2 {
   width: 100%;
   grid-template-columns: 0.8fr 1fr 0.6fr;
   grid-template-rows: 0.1fr 1fr;
-  gap: 7px 0px;
+  gap: 7px 7px;
+  height: 95vh;
   grid-auto-flow: row;
   grid-template-areas:
     "logo . menu"
@@ -68,8 +69,6 @@ h2 {
   grid-area: menu;
   line-height: 150%;
   text-align: right;
-  padding-top: 3%;
-  padding-right: 5%;
   font-size: 1.2vw;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;

@@ -260,6 +260,8 @@ button:hover {
   grid-area: card;
   text-align: center;
   border-radius: 5%;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
 }
 
 #cards {
