@@ -1,6 +1,8 @@
 var clicks;
 var players;
 var unexpectedturn = 0;
+var introModal = document.getElementById('introModal');
+var introSpan = document.getElementsByClassName("intro_close")[0];
 var marketModal = document.getElementById('marketModal');
 var marketSpan = document.getElementsByClassName("market_close")[0];
 var cheatsheetModal = document.getElementById("cheatsheetModal");
@@ -11,6 +13,7 @@ var exitNo = document.getElementsByClassName("exit_no")[0];
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var btn2 = document.getElementById("secBtn");
+var btn3 = document.getElementById("trdBtn");
 var btnExit = document.getElementById("exitBtn");
 var btnExit2 = document.getElementById("exitBtn2");
 var loseplayer = document.getElementById("lostplayer")
@@ -225,7 +228,7 @@ $("#explainbtn2").click(function() {
 $("#rules_to_intro").click(function() {
   $("#rules").fadeOut(500);
   $(".intro-wrapper").fadeOut(500);
-  // cheatsheetModal.style.display = "block";
+  $("#introModal").fadeIn(2000);
 });
 
 
@@ -312,6 +315,10 @@ btn2.onclick = function() {
     cheatsheetModal.style.display = "block";
 }
 
+btn3.onclick = function() {
+    cheatsheetModal.style.display = "block";
+}
+
 // When the user clicks on <span> (x), close the modal
 cheatsheetSpan.onclick = function() {
   cheatsheetModal.style.display = "none";
@@ -335,6 +342,10 @@ exitNo.onclick = function() {
   exitModal.style.display = "none";
 }
 
+introSpan.onclick = function() {
+  introModal.style.display = "none";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == cheatsheetModal) {
@@ -345,6 +356,9 @@ window.onclick = function(event) {
   }
   else if (event.target == exitModal) {
     exitModal.style.display = "none";
+  }
+  else if (event.target == introModal) {
+    introModal.style.display = "none";
   }
 }
 
