@@ -1,0 +1,36 @@
+* {
+  padding: 0.5%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Andale Mono", AndaleMono;
+  text-align: center;
+}
+
+body {
+  background-color: #57443B;
+}
+
+p {
+  font-size: 1.3vw;
+  text-align: center;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10vw;
+  padding-bottom: 5vw;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: 20vw;
+  margin: 0.5vw;
+  font-color: #463427;
+}

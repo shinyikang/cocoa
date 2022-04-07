@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'Andale Mono Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Andale Mono'), url('ANDALEMO.woff') format('woff');
+}
+
 
 * {
   padding: 0.5%;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Andale Mono", AndaleMono;
+  font-family: "Andale Mono Regular", sans-serif;
 }
 
 body {
@@ -12,14 +19,17 @@ body {
 
 p {
   font-size: 1.3vw;
-  font-family: "Andale Mono", AndaleMono;
 }
 
 h2 {
   margin-top: 5%;
   text-align: center;
   font-size: 1.4vw;
-  font-family: "Andale Mono", AndaleMono;
+  font-family: "Andale Mono Regular", sans-serif;
+}
+
+button {
+  font-size: 1.2vw;
 }
 
 button:hover {
