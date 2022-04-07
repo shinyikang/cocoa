@@ -260,7 +260,6 @@ button:hover {
   grid-area: card;
   text-align: center;
   border-radius: 5%;
-  transition-duration: 1s;
 }
 
 #cards {
@@ -283,9 +282,10 @@ button:hover {
 }
 
 .cardBox:active {
-  position:relative;
-  top:-5px;
-  box-shadow: 0 6px #C6C6C6;
+  /*position:relative;
+  top:-5px;*/
+  transform: scale(1.03, 1.03);
+  /*box-shadow: 0 6px #C6C6C6;*/
 }
 
 
