@@ -260,6 +260,7 @@ button:hover {
   grid-area: card;
   text-align: center;
   border-radius: 5%;
+  transition-delay: -0.05s;
   transition-duration: 0.05s;
   -webkit-transition-duration: 0.4s;
 }
@@ -469,7 +470,7 @@ button:hover {
   margin: auto;
   padding: 20px;
   width: 20%;
-  height: 30%;
+  height: 170px;
   text-align: center;
   border-radius: 1.5vw;
 }
