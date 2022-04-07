@@ -7,8 +7,7 @@
 
 
 * {
-/*  padding: 0.5%;
-*/  margin: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Andale Mono Regular", sans-serif;
 }
@@ -204,6 +203,7 @@ button:hover {
   padding: 0.4vw 1vw;
   background-color: transparent;
   border-width: thin;
+  font-size: 1.2vw;
   color: black;
 }
 
@@ -260,7 +260,7 @@ button:hover {
   grid-area: card;
   text-align: center;
   border-radius: 5%;
-  transiton: all 2s;
+  transition-duration: 1s;
 }
 
 #cards {
