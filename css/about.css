@@ -37,6 +37,10 @@ h2 {
   -ms-user-select: none;
 }
 
+a {
+  color: #A57C6C;
+}
+
 
 .container {  display: grid;
   padding: 12px;
