@@ -346,6 +346,8 @@ introSpan.onclick = function() {
   introModal.style.display = "none";
 }
 
+document.addEventListener('touchstart',()=>console.log('touch called'));
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == cheatsheetModal) {
@@ -361,10 +363,3 @@ window.onclick = function(event) {
     introModal.style.display = "none";
   }
 }
-
-
-// $(document).on('touchstart', function (event) {
-//     if (!$(event.target).closest('#MyDivId').length) {
-//         $('#MyDivId').hide()
-//     }
-// });
